@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+one');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #fafafa;
+    font-family: Trebuchet MS, Helvetica;
+}
+header {
+    position: fixed;
+    width: 100%;
+}
+/************ Menu ************/
+#menu-mobile {
+    /* чекбокс скрыт */
+    display: none;
+    }
+    .main-menu {
+    /* пункты меню скрыты */
+    display: none;
+    padding: 0;
+    margin: 0;
+    }
+    .main-menu li {
+    /* пункты меню расположены вертикально */
+    /* каждый имеет ширину 100% */
+    font-size: 16px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    }
+    .main-menu a {/* стилизация ссылок меню */
+    display: block;
+    text-align: center;
+    border-bottom: 1px solid #000000;
+    color: #ffffff;
+    padding: .5em;
+    text-decoration: none;
+    background-color: rgb(31, 31, 31);
+    }
+    .main-menu a:hover { /*кнопки меню меняют цвет при наведении курсора*/ 
+    background-color: rgb(19, 19, 19);
+    }
+    .toggle-button {     /*стилизация кнопки "меню" для width < 768px*/
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    width: 100%;
+    }
+    #menu-mobile:checked + nav .toggle-button{
+    /*кнопка меню меняет цвет при нажатии на неё(когда меню открыто)*/
+    color: #949493;
+    }
+    #menu-mobile:checked + nav .main-menu { /* когда чекбокс активен меню становится видимым */
+    display: block;
+    }
+.top {
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://regnum.ru/uploads/pictures/news/2016/04/07/regnum_picture_14600160805335362_normal.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+}
+
+.top h1 {
+    padding-top: 400px;
+}
+
+.top h3 {
+    color: #ccc;
+}
+
+.scientist {
+    float: left;
+    background-image: url(https://ymatuhin.ru/assets/img/atom/plugins_2/atom-logo.png);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}
+
+.scientist h2 {font-size: 2.5em;}
+
+.scientist .img {
+    float: left;
+    width: 30%;
+    margin-right: 5%;
+    margin-top: 50px;
+}
+
+.scientist .img:nth-child(even) {
+    margin-left: 22%;
+}
+
+.scientist img {
+    padding: 5px;
+    float: left;
+    width: 100%;
+    max-width: 300px;
+    border: 2px solid silver;
+    background-color: #fff;
+}
+.scientist span {
+    float: left;
+    text-align: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
+    padding: 5px;
+    color: #fff;
+}
+
+.scientist a:hover{
+    filter: alpha (Opacity=70);
+    opacity: 0.7;
+}
+
+.o_nas {
+    float: left;
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://www.snuchennai.edu.in/wp-content/uploads/2021/04/Music-to-Ears-GoDaddy-Store-Image-1.png);
+    background-blend-mode: multiply;
+    background-color: #4d5a5c;
+    background-size: cover;
+    background-position: center center;
+    text-align: justify;
+    color: #fff;
+    font-size: 2em;
+    padding-top: 60px;
+}
+
+.o_nas h2 {
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.o_nas p {
+    font-size: 0.8em;
+    margin: 3% 5% 1% 5%;
+    line-height: 40px;
+}
+
+.contacts {
+    width: 100%;
+    height: 700px;
+    float: left;
+    padding-bottom: 40px;
+    padding-top: 70px;
+    background-image: url(https://media.istockphoto.com/illustrations/black-ink-grunge-hand-drawing-of-fast-moving-post-mail-envelope-or-illustration-id1080245256);
+    background-blend-mode: multiply;
+    background-color: #495764;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: lighter;
+}
+
+.contacts h5 {
+    font-size: 3em;
+    color: #ffffff;
+}
+
+.form_input {
+    width: 35%;
+    margin-top: 15px;
+    margin-left: 33%;
+    font-size: 1.1em;
+}
+
+.form_input label {
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-family: 'Roboto Slab', serif;
+}
+
+.form_input label > span {
+    color: #cc6b6b
+}
+
+.form_input input, .form_input textarea {
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px 2%;
+    border-radius: 7px;
+    border: 2px solid silver;
+    font-size: 0.9em;
+    color: #4a4a4a;
+}
+
+.form_input input:focus, .form_input textarea:focus {
+    border-color: #333;
+}
+
+.btn {
+    float: left;
+    border-radius: 5px;
+    padding: 5px 9px;
+    font-size: 1.2em;
+    background-color: #359c1b;
+    text-shadow: #454545 0 0 2px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;;
+}
+
+.btn:hover {
+    background-color: #155818;
+}
+
+.footer {
+    float: left;
+    height: 50px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding-left: 5%;
+    font-size: 1em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    background-color: #333;
+    text-shadow: 1px 1px 2px rgb(47, 0, 255);
+}
+
+.content {
+    width: 100%;
+    padding-top: 75px;
+    height: 1000px;
+    float: left;
+    color: #fff;
+    text-align: justify;
+    line-height: 23px;
+    background-blend-mode:multiply;
+    background-color: #333;
+    background-image: url(https://mocah.org/mocahbig/42987-Atom-Black-amp-White-MinimalistAtom-HD-Wallpaper.jpg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.photo_sc img {
+    margin: 2% 40% 5% 40%;
+    background-color: #fff;
+    width: 20%;
+    border: 2px solid silver;
+}
+
+.title_sc h4{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.info_sc {
+    margin: 0 10% 2% 10%;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+@media screen and (min-width: 768px){
+    .toggle-button {
+        /* label скрыт */
+        display: none;
+        }
+        .main-menu {
+        display: block;
+        margin: 0 auto;
+        padding: 0 15%;
+        background-color: #000000;
+        height: 60px;
+        }
+        .main-menu li {
+        /* теги <li> расположены в ряд */
+        width: calc(100% / 4);
+        text-align: center;
+        display: inline-block;
+        margin-right: -4px;
+        padding-top: 10px;
+        }
+        .main-menu a {
+        display: inline-block;
+        margin-right: -4px;
+        font-size: 18px;
+        font-weight: 700;
+        background-color: #000000;
+        text-decoration: none;
+        color: #fff;
+        text-transform: capitalize;
+        border-bottom: 0;
+        }
+
+    .scientist h2 {
+        font-size: 3.5em;
+    }
+    .o_nas h2 {
+        font-size: 2.5em;
+    }
+    
+}
+@media screen and (max-width: 480px) {
+    .top h1 {
+        font-size: 1.5em;
+    }
+    .top h2 {
+        font-size: 1em;
+    }
+    .top {
+        height: 800px;
+    }
+    .scientist span {
+        font-size: 1.2em;
+    }
+    .scientist h2 {
+        font-size: 2.5em;
+    }
+    .o_nas h2 {
+        font-size: 1.5em;
+    }
+    .o_nas {
+        height: 850px;
+    }
+    .o_nas p {
+        font-size: 0.6em;
+        line-height: 30px;
+    }
+    .contacts h5 {
+        font-size: 2em;
+    }
+    .contacts {
+        height: 500px;
+    }
+    .form_input label, span {
+        font-size: 0.9em;
+    }
+    .form_input {
+        width: 60%;
+        margin-left: 25%;
+    }
+    .content {
+        height: 750px;
+    }
+    .title_sc{
+        font-size: 0.7em;
+    }
+    .info_sc {
+        font-size: 13px;
+    }
+    .footer {
+        height: 30px;
+        font-size: 0.7em;
+        padding-bottom: 4px;
+        padding-top: 2px;
+    }
+}
